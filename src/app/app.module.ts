@@ -10,6 +10,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule} from "@angular/forms";
 import {MatIconModule} from '@angular/material/icon';
+import {HttpClientModule} from "@angular/common/http";
+import {NoteService} from "./service/note.service";
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [NoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
