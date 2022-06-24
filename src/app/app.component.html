@@ -3,7 +3,5 @@
   <app-input></app-input>
 </header>
 <main>
-  <app-note></app-note>
-  <app-note></app-note>
-  <app-note></app-note>
+  <app-note *ngFor="let note of notes" [note]="note"></app-note>
 </main>
